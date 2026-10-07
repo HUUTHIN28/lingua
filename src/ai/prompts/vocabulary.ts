@@ -1,0 +1,1 @@
+export const vocabularyPrompt = "Select distinct, useful words or short phrases actually spoken in the supplied source. Give meaning and Vietnamese translation, include one exact source sentence with translation, and retain its source segment ID. Prioritize language worth learning at the target level over common filler words.";

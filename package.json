@@ -1,0 +1,40 @@
+{
+  "name": "linguatube",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke:gemini": "vitest run src/ai/providers/gemini-provider.live.test.ts",
+    "smoke:gemini:pipeline": "vitest run src/ai/pipeline/learning-generation-pipeline.gemini.live.test.ts",
+    "smoke:openrouter": "vitest run src/ai/providers/openrouter-provider.live.test.ts",
+    "smoke:openrouter:pipeline": "vitest run src/ai/pipeline/learning-generation-pipeline.live.test.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.1",
+    "lucide-react": "^1.52.0",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.3.8",
+    "jsdom": "^27.4.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}

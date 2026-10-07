@@ -1,0 +1,12 @@
+node_modules
+.next
+coverage
+.env*
+!.env.example
+*.tsbuildinfo
+npm-debug.log*
+.local/
+.understand-code/
+.agents/
+.codex/
+.aws/
